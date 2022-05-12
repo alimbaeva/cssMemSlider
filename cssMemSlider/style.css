@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(2, 113, 76);
+}
+
+.slider__container {
+    width: 60%;
+    margin: 1% auto;
+    position: relative;
+}
+
+#texts {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+input {
+    opacity: 0;
+}
+
+.slide_block {
+    width: 100%;
+    padding: 3vh 0;
+    display: flex;
+}
+
+#show_slides .ribbon_slider,
+.slide_text {
+    width: 500%;
+}
+
+.slide,
+.text {
+    float: left;
+    width: 20%;
+    background-size: cover;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 3em;
+    object-fit: cover;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.slide_block {
+    margin-top: -.2em;
+}
+
+#move {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#move label {
+    width: 3em;
+    height: 3em;
+    margin: 0 .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#move div {
+    width: 1.3em;
+    height: 1.3em;
+    display: inline-block;
+    background-color: rgb(224, 227, 24);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#move label:hover div {
+    background-color: rgb(14, 190, 235);
+    transition: 1s;
+}
