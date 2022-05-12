@@ -207,3 +207,11 @@ input {
         font-size: .8rem;
     }
 }
+
+
+footer {
+    margin-top: 3em;
+    background-color: rgba(76, 92, 54, 0.927);
+    color: aliceblue;
+    text-align: center;
+}
