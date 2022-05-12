@@ -121,3 +121,24 @@ input {
     margin-left: -400%;
     transition: 2s;
 }
+
+
+#slide1:checked~.slide_block #move label .slide1_div {
+    background-color: aliceblue;
+}
+
+#slide2:checked~.slide_block #move label .slide2_div {
+    background-color: aliceblue;
+}
+
+#slide3:checked~.slide_block #move label .slide3_div {
+    background-color: aliceblue;
+}
+
+#slide4:checked~.slide_block #move label .slide4_div {
+    background-color: aliceblue;
+}
+
+#slide5:checked~.slide_block #move label .slide5_div {
+    background-color: aliceblue;
+}
