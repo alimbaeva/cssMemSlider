@@ -142,3 +142,42 @@ input {
 #slide5:checked~.slide_block #move label .slide5_div {
     background-color: aliceblue;
 }
+
+
+
+@media (max-width: 900px) {
+    #move label {
+        width: 2em;
+        height: 2em;
+    }
+
+    #move div {
+        width: .9em;
+        height: .9em;
+    }
+
+    #texts {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide_block {
+        flex-direction: column;
+    }
+
+    #texts {
+        order: 2;
+        width: 100%;
+    }
+
+    .slide_block {
+        margin: 0;
+        padding: 0;
+    }
+
+    #move {
+        width: 50%;
+        margin: 1em auto;
+    }
+}
