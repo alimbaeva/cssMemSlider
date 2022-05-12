@@ -90,3 +90,34 @@ input {
     background-color: rgb(14, 190, 235);
     transition: 1s;
 }
+
+
+#slide1:checked~#show_slides .ribbon_slider,
+#slide1:checked~.slide_block #texts .slide_text {
+    margin-left: 0;
+    transition: 2s;
+}
+
+#slide2:checked~#show_slides .ribbon_slider,
+#slide2:checked~.slide_block #texts .slide_text {
+    margin-left: -100%;
+    transition: 2s;
+}
+
+#slide3:checked~#show_slides .ribbon_slider,
+#slide3:checked~.slide_block #texts .slide_text {
+    margin-left: -200%;
+    transition: 2s;
+}
+
+#slide4:checked~#show_slides .ribbon_slider,
+#slide4:checked~.slide_block #texts .slide_text {
+    margin-left: -300%;
+    transition: 2s;
+}
+
+#slide5:checked~#show_slides .ribbon_slider,
+#slide5:checked~.slide_block #texts .slide_text {
+    margin-left: -400%;
+    transition: 2s;
+}
