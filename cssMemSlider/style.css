@@ -181,3 +181,29 @@ input {
         margin: 1em auto;
     }
 }
+
+@media (max-width: 426px) {
+    .slide img {
+        border-radius: 1em;
+    }
+
+    #texts {
+        font-size: 1rem;
+    }
+
+    #move label {
+        margin: 0 .1em;
+    }
+
+    #move div {
+        width: .7em;
+        height: .7em;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #texts {
+        font-size: .8rem;
+    }
+}
