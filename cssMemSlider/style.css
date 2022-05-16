@@ -1,0 +1,275 @@
+body {
+    background-color: rgb(2, 113, 76);
+}
+
+.slider__container {
+    width: 60%;
+    margin: 1% auto;
+}
+
+#texts {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+input {
+    opacity: 0;
+}
+
+.slide_block {
+    width: 100%;
+    padding: 3vh 0;
+    display: flex;
+}
+
+
+#show_slides .ribbon_slider,
+.slide_text {
+    width: 500%;
+}
+
+.slide {
+    display: inline-block;
+    width: 19.9%;
+    background-size: cover;
+}
+
+.text {
+    display: inline-block;
+    width: 19.85%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 3em;
+    object-fit: cover;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.slide_block {
+    margin-top: -.2em;
+}
+
+#move {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#move label {
+    width: 3em;
+    height: 3em;
+    margin: 0 .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#move div {
+    width: 1.3em;
+    height: 1.3em;
+    display: inline-block;
+    background-color: rgb(224, 227, 24);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+#move label:hover div {
+    background-color: rgb(14, 190, 235);
+    transition: 1s;
+}
+
+
+#slide1:checked~#show_slides .ribbon_slider,
+#slide1:checked~.slide_block #texts .slide_text {
+    margin-left: 0;
+    transition: 2s;
+}
+
+#slide2:checked~#show_slides .ribbon_slider,
+#slide2:checked~.slide_block #texts .slide_text {
+    margin-left: -100%;
+    transition: 2s;
+}
+
+#slide3:checked~#show_slides .ribbon_slider,
+#slide3:checked~.slide_block #texts .slide_text {
+    margin-left: -200%;
+    transition: 2s;
+}
+
+#slide4:checked~#show_slides .ribbon_slider,
+#slide4:checked~.slide_block #texts .slide_text {
+    margin-left: -300%;
+    transition: 2s;
+}
+
+#slide5:checked~#show_slides .ribbon_slider,
+#slide5:checked~.slide_block #texts .slide_text {
+    margin-left: -400%;
+    transition: 2s;
+}
+
+
+#slide1:checked~.slide_block #move label .slide1_div {
+    background-color: aliceblue;
+}
+
+#slide2:checked~.slide_block #move label .slide2_div {
+    background-color: aliceblue;
+}
+
+#slide3:checked~.slide_block #move label .slide3_div {
+    background-color: aliceblue;
+}
+
+#slide4:checked~.slide_block #move label .slide4_div {
+    background-color: aliceblue;
+}
+
+#slide5:checked~.slide_block #move label .slide5_div {
+    background-color: aliceblue;
+}
+
+@media (max-width: 1450px) {
+    #texts {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1450px) {
+    #move {
+        width: 35%;
+        justify-content: end;
+    }
+
+    #move div {
+        width: 1.1em;
+        height: 1.1em;
+    }
+
+    #texts {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 1078px) {
+    .slide {
+        width: 19.8%;
+    }
+
+    .text {
+        width: 19.8%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    #move label {
+        width: 2em;
+        height: 2em;
+    }
+
+    #move div {
+        width: .9em;
+        height: .9em;
+    }
+
+    #texts {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .slide_block {
+        flex-direction: column;
+    }
+
+    #texts {
+        order: 2;
+        width: 100%;
+    }
+
+    .slide_block {
+        margin: 0;
+        padding: 0;
+    }
+
+    #move {
+        width: 50%;
+        margin: 1em auto;
+    }
+}
+
+@media (max-width: 548px) {
+    .slide {
+        width: 19.7%;
+    }
+}
+
+@media (max-width: 440px) {
+    .text {
+        width: 19.8%;
+    }
+
+    #texts {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 426px) {
+    .slide img {
+        border-radius: 1em;
+    }
+
+    #move {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .slide_text p {
+        margin: 0;
+    }
+
+    #move label {
+        margin: 0 .1em;
+    }
+
+    #move div {
+        width: .7em;
+        height: .7em;
+    }
+
+    .slide {
+        width: 19.6%;
+    }
+
+    .text {
+        width: 19.7%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    #texts {
+        font-size: .8rem;
+    }
+}
+
+
+footer {
+    margin-top: 3em;
+    background-color: rgba(76, 92, 54, 0.927);
+    color: aliceblue;
+    text-align: center;
+}
